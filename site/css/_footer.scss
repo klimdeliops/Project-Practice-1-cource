@@ -1,0 +1,21 @@
+.footer {
+  background-color: #1e2a38;
+  padding: 3rem 0rem;
+  text-align: center;
+  color: white;
+
+  .footer-content {
+    max-width: 100%;
+    margin: 0 auto;
+
+    p {
+      margin: 0.5rem 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .footer-content {
+      font-size: 0.9rem;
+    }
+  }
+}

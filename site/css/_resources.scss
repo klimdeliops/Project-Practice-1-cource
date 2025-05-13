@@ -1,0 +1,90 @@
+.resources-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f5f5f5;
+
+  .resource-container {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    position: relative;
+
+    .resource-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #29588f;
+    }
+
+    .resource-description {
+      text-align: justify;
+      font-size: 1rem;
+      color: #333;
+      line-height: 1.5;
+      margin-bottom: 6rem;
+    }
+
+    .resource-button {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .resource-container {
+    padding: 1.25rem;
+    .resource-title {
+      font-size: 1.4rem;
+    }
+    .resource-button {
+      padding: 15px 30px;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .resource-container {
+    padding: 1rem;
+    .resource-title {
+      font-size: 1.6rem;
+    }
+    .resource-button {
+      padding: 15px 30px;
+      font-size: 0.85rem;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .resource-container {
+    padding: 1rem;
+    .resource-title {
+      font-size: 1.2rem;
+    }
+    .resource-button {
+      width: calc(100% - 2rem);
+      position: relative;
+      bottom: 0;
+      right: 0;
+      margin-top: 1rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .resource-container {
+    padding: 0.75rem;
+    .resource-title {
+      font-size: 1.2rem;
+    }
+    .resource-button {
+      font-size: 0.85rem;
+    }
+  }
+}

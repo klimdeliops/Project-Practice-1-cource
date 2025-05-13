@@ -1,0 +1,370 @@
+.about-page {
+  background-color: #f5f5f5;
+  color: #1e2a38;
+  line-height: 1.6;
+  padding: 0 0 2rem;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: #29588f;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-size: 200%;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 200%;
+    margin: 2rem 0 1.5rem;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+}
+
+.project-header {
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 80%, #f5f5f5 100%);
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 4rem 0;
+
+  h1 {
+    margin-bottom: 1.5rem;
+  }
+
+  .project-meta {
+    display: flex;
+    .project-meeta_h {
+      display: flex;
+      justify-content: center;
+      width: 50%;
+      .meta__logo {
+        margin-right: 4rem;
+        height: 25rem;
+      }
+    }
+
+    .meta_text {
+      text-align: left;
+      padding-left: 4rem;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      gap: 10%;
+      p {
+        font-size: 120%;
+      }
+    }
+    p {
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+    }
+    .btn-pr {
+      margin: 0;
+      padding: 10px 30px;
+      max-width: 200px;
+      font-size: 120%;
+    }
+  }
+}
+
+.project-description {
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .program-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+
+    .feature-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      flex: 1 1 300px;
+
+      ul {
+        padding-left: 1.2rem;
+      }
+
+      li {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
+
+.project-content {
+  .content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+
+    .content-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+
+      &.tasks {
+        text-align: center;
+        ul {
+          margin-left: 25%;
+          text-align: left;
+        }
+        grid-column: 1 / -1;
+      }
+    }
+
+    .task-categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+
+      .task-category {
+        h4 {
+          color: #29588f;
+          margin-bottom: 0.8rem;
+        }
+
+        ul {
+          padding-left: 1.2rem;
+        }
+
+        li {
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+.project-results {
+  margin: 3rem 0;
+
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .audience {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-page {
+    .project-header {
+      padding: 2rem 0;
+      .project-meta {
+        flex-direction: column;
+        align-items: center;
+        .project-meeta_h {
+          padding: 0;
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+          .meta__logo {
+            max-width: 300px;
+            align-items: center;
+            justify-content: center;
+            margin-right: 0;
+            margin-bottom: 2rem;
+            height: auto;
+          }
+        }
+        .meta_text {
+          gap: 5%;
+          p {
+            font-size: 100%;
+          }
+        }
+        .btn-pr {
+          min-width: 70%;
+          margin-top: 1.5rem;
+          font-size: 100%;
+        }
+      }
+    }
+
+    .project-content {
+      .content-grid {
+        .content-card {
+          &.tasks {
+            ul {
+              margin-left: 10%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 979px) {
+  .content-grid {
+    // Когда экран становится уже 900px
+    .content-card.relevance {
+      grid-column: 1 / -1; // растягиваем на всю ширину
+
+      width: 100%;
+      padding: 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    padding: 0 0 1.5rem;
+
+    h1 {
+      font-size: 180%;
+    }
+
+    h2 {
+      font-size: 160%;
+      margin: 1.5rem 0 1rem;
+    }
+
+    .project-header {
+      padding: 2rem 0;
+
+      .project-meta {
+        .project-meeta_h {
+          .meta__logo {
+            max-width: 250px;
+          }
+        }
+
+        .meta_text {
+          text-align: center;
+          padding-left: 1rem;
+
+          .btn-pr {
+            min-width: 90%;
+          }
+        }
+      }
+    }
+
+    .project-content {
+      .content-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+
+        .content-card.tasks ul {
+          margin-left: 5%;
+        }
+      }
+    }
+
+    .program-features {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 603px) {
+  .about-page {
+    .content-grid {
+      .content-card {
+        &.tasks {
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .about-page {
+    h1 {
+      font-size: 120%;
+    }
+
+    h2 {
+      font-size: 100%;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+
+    .project-header {
+      padding: 1.5rem 0;
+
+      .project-meta {
+        .project-meeta_h {
+          .meta__logo {
+            max-width: 200px;
+          }
+        }
+
+        .meta_text {
+          padding-left: 0;
+
+          p {
+            font-size: 90%;
+          }
+        }
+
+        .btn-pr {
+          min-width: 100%;
+          padding: 8px 20px;
+          font-size: 90%;
+        }
+      }
+    }
+
+    .project-content {
+      .content-grid {
+        .content-card {
+          padding: 1rem;
+
+          &.tasks ul {
+            margin-left: 0;
+            padding-left: 1.5rem;
+          }
+        }
+      }
+    }
+
+    .task-categories {
+      grid-template-columns: 1fr;
+    }
+  }
+}

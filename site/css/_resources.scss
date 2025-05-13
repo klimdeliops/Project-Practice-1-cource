@@ -22,7 +22,7 @@
     .resource-description {
       text-align: justify;
       font-size: 1rem;
-      color: #333;
+      color: #1e2a38;
       line-height: 1.5;
       margin-bottom: 6rem;
     }
@@ -36,55 +36,74 @@
 }
 
 @media (max-width: 1280px) {
-  .resource-container {
-    padding: 1.25rem;
-    .resource-title {
-      font-size: 1.4rem;
-    }
-    .resource-button {
-      padding: 15px 30px;
-      font-size: 0.9rem;
+  .resources-section {
+    .resource-container {
+      padding: 1.25rem;
+      .resource-title {
+        font-size: 1.4rem;
+      }
+      .resource-button {
+        padding: 15px 30px;
+        font-size: 0.9rem;
+      }
     }
   }
 }
 
 @media (max-width: 1024px) {
-  .resource-container {
-    padding: 1rem;
-    .resource-title {
-      font-size: 1.6rem;
-    }
-    .resource-button {
-      padding: 15px 30px;
-      font-size: 0.85rem;
+  .resources-section {
+    .resource-container {
+      padding: 1rem;
+      .resource-title {
+        font-size: 1.6rem;
+      }
+      .resource-description {
+        font-size: 0.9rem;
+      }
+      .resource-button {
+        padding: 15px 30px;
+        font-size: 0.85rem;
+      }
     }
   }
 }
 
 @media (max-width: 767px) {
-  .resource-container {
-    padding: 1rem;
-    .resource-title {
-      font-size: 1.2rem;
-    }
-    .resource-button {
-      width: calc(100% - 2rem);
-      position: relative;
-      bottom: 0;
-      right: 0;
-      margin-top: 1rem;
+  .resources-section {
+    .resource-container {
+      padding: 1rem;
+      .resource-title {
+        font-size: 1.2rem;
+      }
+      .resource-button {
+        width: calc(100% - 2rem);
+        position: relative;
+        bottom: 0;
+        right: 0;
+        margin-top: 1rem;
+      }
+       .resource-description {
+        margin-bottom: 40px;
+        font-size: 0.9em;
+      }
     }
   }
 }
 
 @media (max-width: 480px) {
-  .resource-container {
-    padding: 0.75rem;
-    .resource-title {
-      font-size: 1.2rem;
-    }
-    .resource-button {
-      font-size: 0.85rem;
+  .resources-section {
+    .resource-container {
+      padding: 0.75rem;
+      .resource-title {
+        font-size: 1.2rem;
+      }
+      .resource-description {
+        margin-bottom: 30px;
+        font-size: 0.9em;
+      }
+      .resource-button {
+        font-size: 0.85rem;
+      }
     }
   }
 }

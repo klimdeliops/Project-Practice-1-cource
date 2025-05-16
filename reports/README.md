@@ -4,6 +4,6 @@
 - Итоговый отчет по проектной практике приведен в файле [report.docx](report.docx).
 - Итоговый отчет по проектной практике приведен в файле [report.pdf](report.pdf).
   
-- Итоговый отчет по взаимодействию с партнерами приведен в файле [report-partners.pdf](report-partners.pdf).
+- Итоговый отчет по взаимодействию с партнерами приведен в файле [report-partners.pdf](report-partners.docx).
 - Итоговый отчет по взаимодействию с партнерами приведен в файле [report-partners.pdf](report-partners.pdf).
 

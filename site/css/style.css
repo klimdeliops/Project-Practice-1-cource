@@ -79,7 +79,7 @@ header .container .subcontainer .navbar .logo {
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  font-size: 125%;
+  font-size: 100%;
 }
 header .container .subcontainer .navbar .logo img {
   height: 80%;
